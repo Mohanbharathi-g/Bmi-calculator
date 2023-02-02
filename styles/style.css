@@ -1,0 +1,143 @@
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-metalic-seaweed: #177e89ff;
+  --clr-eagle-green: #084c61ff;
+  --clr-granium-lake: #db3a34ff;
+  --clr-yellow-red: #ffc857ff;
+  --clr-jet: #323031ff;
+  --clr-white: #fffafa;
+  --clr-black: #000000;
+  --clr-box-shadow: 0px 22px 12px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4d03f;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+}
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+main {
+  width: 80%;
+  min-width: 350px;
+  padding: 10px 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 5rem;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  /* background-color: aqua; */
+  box-shadow: var(--clr-box-shadow);
+  /* margin: auto; */
+}
+.height-slider,
+.weight-slider {
+  width: 100%;
+  min-width: 300px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.weight-input,
+.height-input {
+  width: 70%;
+  height: 3.5px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #eadbdb;
+  border-radius: 3px;
+}
+
+.weight-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: palevioletred;
+}
+.height-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: palevioletred;
+}
+#weight-value {
+  width: 30%;
+  /* background-color: aqua; */
+  margin: auto;
+  text-align: center;
+}
+.message-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#bmi-value {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+#message,
+h1 {
+  font-weight: 1.5rem;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+#weight-value,
+#height-value {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.fa-brands:hover {
+  box-shadow: rgba(0, 0, 0, 0.15);
+  transition: 0.3s all ease-in-out;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    width: 450px;
+  }
+}
